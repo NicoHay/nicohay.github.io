@@ -1,3 +1,40 @@
 body{
     background-color: aquamarine;
+    margin: 0;
+    padding: 0;
+}
+#intro{
+    background-image: url( './../images/fond1.svg' );
+    background-size:100%;
+    background-repeat: no-repeat;
+    z-index: 90;
+    height: 300vh;
+    width: auto;
+    
+}
+#intro-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background-color: firebrick;
+}
+
+#part1{
+    background-color: darkorchid;
+    height: 100vh;
+    width: auto;
+}
+#part2{
+    background-color: chartreuse;    
+    height: 100vh;
+    width: auto;
+}
+#footer{
+    background-color:coral;
+    height: 100vh;
+    width: auto;
 }
