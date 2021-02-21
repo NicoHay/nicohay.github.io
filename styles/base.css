@@ -1,40 +1,119 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
-    background-color: aquamarine;
     margin: 0;
     padding: 0;
+    overflow-x: auto; 
+    overflow-y: hidden; 
+    font-family: 'Josefin Sans', sans-serif;
 }
-#intro{
-    background-image: url( './../images/fond1.svg' );
-    background-size:100%;
-    background-repeat: no-repeat;
-    z-index: 90;
-    height: 300vh;
-    width: auto;
-    
-}
-#intro-content{
+/* generic class */
+.center{
     position: absolute;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 50%;
-    height: 50%;
-    background-color: firebrick;
+    width: 50vh;
+    height: 50vh;
+}
+
+#content{
+    overflow-x: auto; 
+    overflow-y: hidden; 
+    -webkit-overflow-scrolling: touch;
+    height: 100vh;
+    width: 600vh;
 }
 
 #part1{
     background-color: darkorchid;
+    display: inline;
+    position: absolute; 
     height: 100vh;
-    width: auto;
+    width: 200vw;
+    left: 0;
 }
 #part2{
     background-color: chartreuse;    
+    position: absolute; 
+    display: inline;
     height: 100vh;
-    width: auto;
+    width: 200vw;
+    left: 200vw;
 }
-#footer{
-    background-color:coral;
+#part3{
+    background-color: rgb(255, 0, 212);    
+    position: absolute; 
+    display: inline;
     height: 100vh;
-    width: auto;
+    width: 200vw;
+    left: 400vw;
 }
+
+#lottie{
+    width: auto;
+    height: 50vh;
+    width: 50vw;
+}
+
+.letter-a{
+    font-size: 200px;
+    margin: auto;
+
+}
+#lottie-scroll{
+    width: 100px;
+    height: 100px;
+    transform: rotate(-90deg);
+    position: fixed;
+    right: 50%;
+    bottom:0;
+}
+
+#lottie-burger{
+    background-color:transparent;
+    width: auto;
+    height: 10vh;
+    position: fixed;
+    right: 50%;
+    bottom:0;
+    z-index: 100;
+}
+#menuBox{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(13, 216, 216);
+    position: absolute; 
+}
+.open-menu{
+    animation: transitionMenu 2s cubic-bezier(0.49, 0.29, 0.15, 0.99) both;
+    z-index: 100;
+
+}
+.my-menu{
+    font-size: 3em;
+    font-weight: 900;
+    text-transform: uppercase;
+    list-style: none;
+    clear: both;
+}
+.my-menu li {
+    margin-bottom: 1em;
+    margin-left: 1.3em;
+   
+}
+
+@keyframes transitionMenu {
+    0% {
+      -webkit-transform: translateY(100vh);
+              transform: translateY(100vh);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }

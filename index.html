@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my page</title>
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300;1,700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<div id="intro">
-    <div id='intro-content'>
-        content
-    </div>
-</div>
-<div id="part1"></div>
-<div id="part2"></div>
-<div id="footer"></div>
+    <div id="content">
+        <div id="menuBox">
+            <ul class="my-menu center">
+                <li>test 1 </li>
+                <li>test 2</li>
+                <li>test 3</li>
+                <li>test 4</li>
+            </ul>
+        </div>
+        <div id="lottie-burger" class="burger closed-burger"></div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <div id="part1">
+            <span class="letter-a">a</span>
+            <div id="lottie-scroll"></div>
+        </div>
+        <div id="part2">
+        </div>
+        <div id="part3">
+            c
+        </div>
+    </div>
+
+
+    <!--  librairie animation svg lottie  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js"
+        integrity="sha512-BB7rb8ZBAxtdJdB7nwDijJH9NC+648xSzviK9Itm+5APTtdpgKz1+82bDl4znz/FBhd0R7pJ/gQtomnMpZYzRw=="
+        crossorigin="anonymous"></script>
     <script src="scripts/app.js"></script>
 </body>
+
 </html>
