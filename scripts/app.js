@@ -5,38 +5,38 @@ var s = skrollr.init([
     smoothScrolling = true,
 ]);
 
-// list of options
-let options = {
-    root: null,
-    rootMargin: '100%',
-    threshold: 0.1
-};
-// instantiate a new Intersection Observer
-let observer = new IntersectionObserver(onEntry, options);
+// // list of options
+// let options = {
+//     root: null,
+//     rootMargin: '100%',
+//     threshold: 0.1
+// };
+// // instantiate a new Intersection Observer
+// let observer = new IntersectionObserver(onEntry, options);
 
 
-// the callback function that will be fired
-// when the element apears in the viewport
-function onEntry(entry) {
-    entry.forEach((change, index) => {
-        console.log(index)
-        if (index === 0) {
+// // the callback function that will be fired
+// // when the element apears in the viewport
+// function onEntry(entry) {
+//     entry.forEach((change, index) => {
+//         console.log(index)
+//         if (index === 0) {
 
-            change.target.classList.add('visible');
-        }
+//             change.target.classList.add('visible');
+//         }
 
 
-    });
-}
+//     });
+// }
 
-// list of paragraphs
-let elements = document.querySelectorAll('p');
-// loop through all elements
-// pass each element to observe method
-// ES2015 for-of loop can traverse through DOM Elements
-for (let elm of elements) {
-    observer.observe(elm);
-}
+// // list of paragraphs
+// let elements = document.querySelectorAll('p');
+// // loop through all elements
+// // pass each element to observe method
+// // ES2015 for-of loop can traverse through DOM Elements
+// for (let elm of elements) {
+//     observer.observe(elm);
+// }
 
 
 
