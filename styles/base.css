@@ -63,22 +63,22 @@
 
 .container section:nth-child(2) { 
 
-    background-color: #cdb4db;
-    min-width       : 200vw;
+    background-color: #d16ba5;
+    min-width       : 500vw;
 }
 .container section:nth-child(3) {
 
-    background-color: #ffc8dd;
+    background-color: #aa8fd8;
     min-width       : 200vw;
 }
 .container section:nth-child(4) {
 
-    background-color: #ffafcc;
+    background-color: #79b3f4;
     min-width: 200vw;
 }
 .container section:nth-child(5) {
 
-    background-color: #bde0fe;
+    background-color: #41dfff;
     min-width: 200vw;
 }
 .container section h2 {
@@ -124,7 +124,7 @@
     letter-spacing: 0.3em;
     font-weight: bold;
 }
-.letter::before{
+.letter{
     position: absolute;
     font-size: 20em;
     display: inline-block;
@@ -132,7 +132,7 @@
     background-color: black;
 
 }
-.letter-1::before{
+.letter-1{
     content: "";
     top: 50vh;
     left: 150%;  
@@ -142,7 +142,7 @@
 
 
 }
-.letter-2::before{
+.letter-2{
     content: "";
     top: 45vh;
     width: 10vw;
@@ -150,15 +150,15 @@
     border-radius: 10vw;
     left: 135%;  
 }
-.letter-3::before{
+.letter-3{
     content: "";
     top: 40vh;
     left: 140%;  
-        width: 8vw;
+    width: 8vw;
     height: 8vw;
     border-radius: 8vw;
 }
-.letter-4::before{
+.letter-4{
     content: "";
     top: 25vh;
     left: 145%;  
